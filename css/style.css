@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 0 5%;
+}
+
+.wrap {
+    min-height: 100vh;
+}
+
+.topnav {
+    position: relative;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topnav-centered a {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.topnav-right {
+    float: right;
+    font-size: 5px;
+}
+
+input[type=search] {
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.icon,
+.icon1 {
+    height: 10%;
+    display: none;
+}
+
+.icon>img {
+    height: 20px;
+}
+
+.icon1>img {
+    height: 20px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.bookscount {
+    color: blue;
+}
+
+.banner h1 {
+    margin: 5%;
+    font-size: 50px;
+}
+
+.banner p {
+    font-size: 25px;
+}
+
+button {
+    background-color: rgb(38, 38, 128);
+    color: white;
+    font-size: 16px;
+    margin: 5%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.content {
+    margin: 2% 0;
+}
+
+.imgcontainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.lorem {
+    margin: 5%;
+    overflow: hidden;
+    position: absolute;
+    right: 10%;
+    bottom: -60%;
+    width: 350px;
+    height: 200px;
+    border: 1 px solid black;
+    text-align: start;
+    border-radius: 30px;
+    padding: 2%;
+    background-color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px rgb(212 209 209);
+}
+
+div.relative {
+    width: 70%;
+    height: 400px;
+    position: relative;
+}
+
+.socialmedia {
+    margin: 5%;
+    overflow: hidden;
+    position: absolute;
+    width: 20%;
+    right: 5%;
+    bottom: -70%;
+    border: 1 px solid black;
+    text-align: start;
+    border-radius: 30 px;
+    margin-left: 10 px;
+}
+
+.socialmedia>i {
+    padding-left: 1%;
+}
+
+.featuredwriters {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+h2 {
+    margin: 2%;
+}
+
+.flex-container {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex: 50%;
+    margin: 10px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex-container>div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+#profile-container {
+    background-image: url('assets/shashitharoor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+div.item {
+    vertical-align: top;
+    text-align: center;
+}
+
+.profilecontainer {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.caption {
+    display: block;
+}
+
+
+/* Responsive navigation menu (for mobile devices) */
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        overflow: hidden;
+        position: relative;
+    }
+    .topnav-centered {
+        display: none;
+        float: left;
+        position: relative;
+        top: 100%;
+        left: 10%;
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+    }
+    .topnav-centered a {
+        display: block;
+    }
+    .topnav-right {
+        display: none;
+    }
+    .icon {
+        display: block;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+    .topnav a {
+        float: none;
+    }
+    .icon1 {
+        display: block;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-container>div {
+        margin: 0 auto;
+        padding: 3%;
+    }
+}
